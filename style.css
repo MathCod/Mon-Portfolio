@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     background: #f9f9f9;
@@ -15,11 +15,9 @@ header {
 }
 
 header img {
-    display: flex;
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    height: auto;
 }
 
 header h1 {
@@ -85,4 +83,51 @@ footer {
 
 .contact a:hover {
     text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  body {
+      padding: 10px;
+  }
+
+  header {
+      flex-direction: column; /* avatar au-dessus du texte */
+      text-align: center;
+  }
+
+  header img {
+      width: 100px;
+      height: 100px;
+  }
+
+  header h1 {
+      font-size: 1.8em;
+  }
+
+  header p {
+      font-size: 1em;
+  }
+
+  h2 {
+      font-size: 1.5em;
+  }
+
+  .project {
+      padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+      font-size: 1.5em;
+  }
+
+  header p {
+      font-size: 0.9em;
+  }
+
+  body {
+      font-size: 0.9em;
+  }
 }
